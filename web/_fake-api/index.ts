@@ -7,7 +7,7 @@ function slugify(input: string): string {
     .replace(/(^-|-$)/g, '');
 }
 
-function imageFor(product: { id: string; category: string }): string {
+export function imageFor(product: { id: string; category: string }): string {
   const seed = slugify(`${product.id}-${product.category}`);
   return `https://picsum.photos/seed/${encodeURIComponent(seed)}/200/200`;
 }

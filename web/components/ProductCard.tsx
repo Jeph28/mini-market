@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import type { Product } from '../lib/types';
+import type { Product } from '../../shared/types';
+import { imageFor } from '../_fake-api/index';
 
 export function ProductCard({ product }: { product: Product }) {
   return (
@@ -20,7 +21,7 @@ export function ProductCard({ product }: { product: Product }) {
         >
           {/* Mock image placeholder */}
           <img
-            src={product.image || '/placeholder.png'}
+            src={imageFor(product) || '/placeholder.png'}
             alt={product.name}
             width={200}
             height={200}

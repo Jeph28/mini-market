@@ -4,14 +4,17 @@
     "module": "NodeNext",
     "moduleResolution": "nodenext",
     "outDir": "dist",
-    "rootDir": ".",
+    "rootDir": "..",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "shared/*": ["../shared/*"]
+    }
   },
-  "include": ["src", "config", "models"],
+  "include": ["src", "config", "models", "../shared"],
   "exclude": ["node_modules", "dist"]
 }

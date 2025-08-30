@@ -1,8 +1,1 @@
-export type Product = {
-  id: string;
-  name: string;
-  price: number;
-  isAvailable: boolean;
-  category: string;
-  image?: string;
-};
+export type { Product, SortField, SortOrder } from '../../shared/types';

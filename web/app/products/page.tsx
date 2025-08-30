@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { fetchProducts } from '../../lib/api';
-import type { Product } from '../../lib/types';
+import type { Product } from '../../../shared/types';
 import { ProductCard } from '../../components/ProductCard';
 import { Controls } from '../../components/Controls';
 

@@ -7,5 +7,5 @@ export function getTopCheapestAvailable(products: Product[], top: number = 3): P
 }
 
 export function useMockData(): boolean {
-  return String(process.env.USE_MOCK_DATA).toLowerCase() === 'true';
+  return String(process.env.USE_MOCK_DATA || 'true').toLowerCase() === 'true';
 }

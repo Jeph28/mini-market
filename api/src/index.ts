@@ -24,7 +24,7 @@ const corsOptions: CorsOptions = {
 };
 app.use(cors(corsOptions));
 
-app.use('/api', productsRouter);
+app.use('/v1', productsRouter);
 
 const port = Number(process.env.PORT || 3001);
 

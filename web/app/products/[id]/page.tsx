@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { fetchProductById } from '../../../lib/api';
+import { imageFor } from '../../../_fake-api/index';
 
 export default async function ProductDetail({ params }: { params: { id: string } }) {
   let product;
@@ -42,7 +43,7 @@ export default async function ProductDetail({ params }: { params: { id: string }
           }}
         >
           <img
-            src={product.image || '/placeholder.png'}
+            src={imageFor(product) || '/placeholder.png'}
             alt={product.name}
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />

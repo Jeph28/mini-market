@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { z } from 'zod';
 import { connectToDatabase } from '../config/mongoose.js';
 import { Product } from '../models/product.model.js';
-import type { SortField, SortOrder, Product as ProductType } from './types.js';
+import type { SortField, SortOrder, Product as ProductType } from 'shared/types.js';
 import { useMockData } from './utils/index.js';
 import mockProducts from './data/products.json' with { type: 'json' };
 
